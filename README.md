@@ -17,3 +17,15 @@ If you open the URL, you can see that the homepage ( https://nextjs-css-issue-re
 More importantly, those two files have *no layout in common* they just happen to import the same stylesheet
 
 This worked before Next 14.2.0
+
+* 14.1.4 : OK
+* 14.2.0-canary.27: OK
+* 14.2.0-canary.28: BROKEN
+* 14.2.0 : BROKEN
+* 14.2.1 : BROKEN
+* 14.2.2 : BROKEN
+* 14.3.0-canary.11: BROKEN
+
+Apparently the issue has been introduced in https://github.com/vercel/next.js/releases/tag/v14.2.0-canary.28
+
+I would bet that the issue was introduced in this PR : https://github.com/vercel/next.js/pull/63157
